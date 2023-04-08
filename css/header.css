@@ -1,0 +1,218 @@
+body {
+    width: 100%;
+max-width: 1440px;
+margin-left: auto;
+margin-right: auto;
+}
+
+:root {
+    --main-bg:#FFFFFF;
+    --title: #1F1F1F;
+    --logo-title: #050505;
+    --text: #797991;
+    --p: #737373;
+    --btn-blue: #508FF4;
+    --title-blue: #1B6DF1;
+    --icons: #508FF4;
+    --white: #FFFFFF;
+}
+
+@font-face {
+    font-family: divFont;
+    src: url(../fonts/HKGrotesk-SemiBoldLegacy.otf);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: gilroyLight;
+    src: url(../fonts/Gilroy-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: gilroyMedium;
+    src: url(../fonts/Gilroy-Medium.ttf);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: gilroyBold;
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: auto;
+}
+
+.navbar i {
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    margin: 0 180px 47px 180px;
+    justify-content:space-between ;
+    align-items: center;    
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-logo {
+    width: 35.8px;
+    height: 38px;    
+}
+
+.navbar-text {
+    color: var(--logo-title);
+    font-size: 25.914px;
+    margin-right: 80px;
+    font-family: divFont;
+    line-height: 33.76px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    color: var(--title);
+    font-size: 16px;
+    gap: 59px;
+    line-height: 100%;
+    margin: 47px 100px 47px 0;
+    font-family: gilroyLight;
+    white-space: pre;
+}
+
+.nav-btn {
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    color: var(--btn-blue);
+    border: 1px solid var(--btn-blue);
+    background-color: var(--white);
+    white-space: pre;
+}
+
+.container-content {
+    margin: 0 180px;
+    text-align: center;
+    background-image: linear-gradient(to top right, #C5B9FF, #FFD8D1 );
+    border-radius: 32px;
+}
+
+.container-h3 {
+    padding-top: 61px;
+    margin: 50px 71.5px 20px 71.5px;
+    font-family:  gilroyBold;
+    color: var(--title-blue);
+    font-size: 16px;
+}
+
+.container-h1 {
+    margin: 0 235px 12px 235px;
+    font-family:  gilroyBold;
+    font-size: 48px;
+    color: var(--title);
+    line-height:52.8px;
+}
+
+.container-p {
+    margin: 0 288px;
+    padding-bottom:  251px;
+    font: size 14px;
+    font-family: gilroyMedium;
+    color: #797991;
+    line-height:22.4px;
+}
+
+.container-image {
+    height: 0;
+}
+
+.container-img {
+    width:863px ;
+    height:563.85px ;
+    position: relative;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);    
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar{
+        display: flex;
+        margin: 40px 25px 67px 25px;
+        justify-content:space-between ;
+        align-items: center;    
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .navbar i {
+        display: inline;
+        font-size:45px;
+        color: var(--icons);
+    }
+
+
+    .container-content {
+        margin: 0 24px;
+        text-align: center;
+        background-image: linear-gradient(to top right, #C5B9FF, #FFD8D1 );
+        border-radius: 32px;
+    }
+    
+    .container-h3 {
+        padding-top: 56px;
+        margin: 0 66px 12px 66x;
+        font-family:  gilroyBold;
+        color: var(--title-blue);
+        font-size: 14px;line-height: 14px;
+    }
+    
+    .container-h1 {
+        margin: 0 107px 20px 107px;
+        font-family:  gilroyBold;
+        font-size: 28px;
+        color: var(--title);
+        line-height:33.6px;
+    }
+    
+    .container-p {
+        margin: 0 65px;
+        padding-bottom:  151px;
+        font-size:18px;
+        font-family: gilroyMedium;
+        color: #797991;
+        line-height:28.8px;
+    }
+    
+    .container-image {
+        height: 0;
+    }
+    
+    .container-img {
+        width:480px ;
+        height:330.68px ;
+        position: relative;
+        left: 20%;
+        top: 40%;
+        transform: translate(-20%, -40%);    
+    }
+}
